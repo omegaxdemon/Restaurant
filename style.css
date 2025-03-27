@@ -1,0 +1,58 @@
+body{
+    background-color: antiquewhite;
+}
+form{
+    width: 900px;
+    background-color: white;
+    border: 3px rgb(202, 202, 202) outset;
+}
+#heading{
+    background-color: midnightblue;
+    color: white;
+    animation: blink-animation 1s steps(2,start) infinite;
+}
+@keyframes blink-animation{
+    0%{opacity: 1;}
+    50%{ opacity: 0;}
+    100%{opacity: 1;}
+} 
+table{
+    
+    border-collapse: collapse;
+    width: 100%;
+    /*background-color: white;*/
+}
+.input{
+    margin-left: 3%;
+    border-radius: 35px;
+    text-align: center ;
+}
+td{
+    padding: 2%;
+}
+#sub{
+    text-align: right;
+}
+#remove{
+    text-align: left;
+}
+#s{
+    padding: 2%;
+    border-radius: 35px;
+    background-color: greenyellow;
+    width: 100px;
+}
+#res{
+    padding: 2%;
+    border-radius: 35px;
+    background-color: rgb(235, 72, 72);
+    width: 100px;
+}
+#s:hover{
+    background-color: rgb(193, 219, 153);
+    cursor: pointer;
+}
+#res:hover{
+    background-color: rgb(243, 159, 159);
+    cursor: pointer;
+}

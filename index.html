@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Billing System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="bg.avif" type="image/x-icon">
+</head>
+<body>
+    <center><h2 id="heading">Restaurant Bill Generator</h2>
+    <form>
+        <table>
+        <tr>
+            <td>
+                Chicken Biriyani(₹189)
+                <input class="input" id="cbr" min="0" type="number" placeholder="Enter number of units">
+            </td>
+            <td>
+                Mutton Biriyani(₹229)
+                <input id="mbr" min="0" class="input" type="number" placeholder="Enter number of units">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Burger(₹99)
+                <input id="brg" min="0" class="input" type="number" placeholder="Enter number of units">
+            </td>
+            <td>
+                Mixed Fried Rice(₹219)
+                <input id="mfr" min="0" type="number" class="input" placeholder="Enter number of units">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Chilli Chicken (8 pc)(₹199)
+                <input id="cc" min="0"  type="number" class="input" placeholder="Enter number of units">
+            </td>
+            <td>
+                Fried Chicken Strips(₹149)
+                <input id="fcs" min="0" type="number" class="input" placeholder="Enter number of units">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Fresh Lime Soda(₹79)
+                <input id="fls" min="0" type="number" class="input" placeholder="Enter number of units">
+            </td>
+            <td>
+                Sandwich(₹159)
+                <input id="snd" min="0" type="number" class="input" placeholder="Enter number of units">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Pasta(₹159)
+                <input id="pss" min="0" type="number" class="input" placeholder="Enter number of units">
+            </td>
+            <td>
+                Shawarma Wrap(₹119)
+                <input id="swp" min="0" type="number" class="input" placeholder="Enter number of units">
+            </td>
+        </tr>
+    </table>
+            <button id="s" accesskey="s" type="button" onclick="cal()">Calculate</button>
+            <button id="res" accesskey="r" type="reset" onclick="rese()">Refresh</button>
+    <h3 style="width:200px;">Total Bill: ₹ <span id="total">0</span></h3>
+    <h3 style="width:200px;">Discount: ₹ <span id="dis">0</span></h3>
+    <h3 style="width:200px;">Final Bill: ₹ <span id="bill">0</span></h3>    
+</form>
+</center>
+<script src="scripts.js"></script>
+</body>
+</html>
